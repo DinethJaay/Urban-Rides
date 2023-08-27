@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCC4DD60-EC67-4D44-8672-B4D2D33F95C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Urban_Rides</RootNamespace>
+    <AssemblyName>Urban Rides</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Details.Designer.cs">
+      <DependentUpon>Customer Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerD.Designer.cs">
+      <DependentUpon>customerD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insert Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert Details.Designer.cs">
+      <DependentUpon>Insert Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports.Designer.cs">
+      <DependentUpon>reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select Service.Designer.cs">
+      <DependentUpon>Select Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="service.Designer.cs">
+      <DependentUpon>service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="vehicalD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicalD.Designer.cs">
+      <DependentUpon>vehicalD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle Details.Designer.cs">
+      <DependentUpon>Vehicle Details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Details.resx">
+      <DependentUpon>Customer Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerD.resx">
+      <DependentUpon>customerD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert Details.resx">
+      <DependentUpon>Insert Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="reports.resx">
+      <DependentUpon>reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select Service.resx">
+      <DependentUpon>Select Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="service.resx">
+      <DependentUpon>service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicalD.resx">
+      <DependentUpon>vehicalD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle Details.resx">
+      <DependentUpon>Vehicle Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="report.xsc">
+      <DependentUpon>report.xsd</DependentUpon>
+    </None>
+    <None Include="report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>report1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="report.xss">
+      <DependentUpon>report.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-icon-white-2.jpg" />
+    <None Include="Resources\335-3354019_white-home-button-icon-png-for-kids-white.jpg" />
+    <None Include="Resources\519-5199103_user-validation-icon-png-download-user-logout-icon.jpg" />
+    <None Include="Resources\logout-comments-logout-icon-white-transparent-11563200974vvdol0inuw.jpg" />
+    <None Include="Resources\1000_F_195074504_V87ZjFo8BI1BvltAkxDJuIZ90XQjnsX8.jpg" />
+    <None Include="Resources\question-icon-help-and-support-icon-help-icon-line-art-symbol-logo-png-clipart.jpg" />
+    <None Include="Resources\519-5199103_user-validation-icon-png-download-user-logout-icon1.jpg" />
+    <None Include="Resources\help-512.png" />
+    <None Include="Resources\about-512.png" />
+    <None Include="Resources\report-512.png" />
+    <None Include="Resources\logout-512.png" />
+    <None Include="Resources\help.jpg" />
+    <None Include="Resources\About.jpg" />
+    <None Include="Resources\VetturaSostitutiva-1628840984.8733-1632900737.0388.png" />
+    <None Include="Resources\65-652890_get-a-smart-repair-quote-car-service-center-icon.png" />
+    <None Include="Resources\pngaaa.com-1078095.png" />
+    <None Include="Resources\png-clipart-car-business-service-maintenance-neubauer-s-auto-repair-car-thumbnail.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\png-clipart-car-wash-illustration-car-wash-computer-icons-hose-compact-car-logo.png" />
+    <None Include="Resources\VetturaSostitutiva-1628840984.8733-1632900737.03881.png" />
+    <None Include="Resources\VetturaSostitutiva-1628840984.8733-1632900737.03882.png" />
+    <None Include="Resources\195-1956577_car-wash-icon-png-car-wash-png-icon.png" />
+    <None Include="Resources\png-clipart-car-business-service-maintenance-neubauer-s-auto-repair-car-thumbnail1.png" />
+    <None Include="Resources\pngaaa.com-10780951.png" />
+    <None Include="Resources\png-clipart-car-business-service-maintenance-neubauer-s-auto-repair-car-thumbnail2.png" />
+    <None Include="Resources\kisspng-car-auto-mechanic-automobile-repair-shop-vector-car-mechanic-5a9ceee2e9b793.6822784115202342109573.jpg" />
+    <None Include="Resources\png-transparent-car-motor-vehicle-tires-automobile-repair-shop-blue-technology-cartoon-communication.png" />
+    <None Include="Resources\kisspng-car-auto-mechanic-motor-vehicle-service-automobile-automotive-battery-5ab51937f392b7.8286414715218179119977.jpg" />
+    <None Include="Resources\pngaaa.com-10780952.png" />
+    <None Include="Resources\maintenance.png" />
+    <None Include="Resources\rental-car.png" />
+    <None Include="Resources\1177568.png" />
+    <None Include="Resources\11775681.png" />
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\pin-code.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\select service.png" />
+    <None Include="Resources\select service1.png" />
+    <None Include="Resources\normal.png" />
+    <None Include="Resources\normal1.png" />
+    <None Include="Resources\normal2.png" />
+    <None Include="Resources\normal3.png" />
+    <None Include="Resources\normal4.png" />
+    <None Include="Resources\normal5.png" />
+    <None Include="Resources\normal6.png" />
+    <None Include="Resources\normal7.png" />
+    <None Include="Resources\normal8.png" />
+    <None Include="Resources\normal9.png" />
+    <None Include="Resources\About.png" />
+    <None Include="Resources\help..png" />
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\select service11.png" />
+    <None Include="Resources\select service12.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
